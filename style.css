@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background: #FFF7F0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+header,
+footer,
+.header,
+.skills,
+.profile,
+.work,
+.contact {
+    margin-inline: 1rem;
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.button {
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFF7F0;
+    padding: 0.5rem 1.6rem;
+    border-radius: 28px;
+}
+
+.button-header,
+.button-footer {
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFF7F0;
+    padding: 0.5rem 1.6rem;
+    background: #030303;
+    border-radius: 28px;
+    transition: 0.6s ease;
+}
+
+.button-header:hover,
+.button-footer:hover {
+    background: #755CDE;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+    color: #030303;
+    margin-top: 2rem;
+}
+
+.header p {
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #7A746E;
+    margin-top: 1rem;
+}
+
+.skill {
+    position: relative;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+article img {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.title {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #FFFFFF;
+}
+
+.first-skill {
+    background: #755CDE;
+    height: 364px;
+    width: 343px;
+}
+
+.second-skill {
+    background: #F6A560;
+    height: 182px;
+    width: 159px;
+}
+
+.third-skill {
+    background: #F39E9E;
+    width: 159px;
+    height: 182px;
+}
+
+.four-skill {
+    background: #EB7565;
+    width: 343px;
+    height: 158px;
+}
+
+.five-skill {
+    background: #61C4B7;
+    width: 343px;
+    height: 182px;
+}
+
+.six-skill {
+    background: #552049;
+    width: 343px;
+    height: 182px;
+}
+
+.below-skills {
+    display: flex;
+    gap: 25px;
+}
+
+.profile {
+    margin-top: 6.25rem;
+}
+
+.profile img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-info {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #030303;
+}
+
+.profile-info p {
+    margin-block: 2rem;
+    font-weight: 500;
+    color: #7A746E;
+}
+
+.button-profile,
+.button-contact {
+    transition: 0.6s ease;
+    background: #EB7565;
+}
+
+.button-profile:hover,
+.button-contact:hover {
+    background: #F6A560;
+    cursor: pointer;
+}
+
+.work {
+    text-align: center;
+    margin-top: 6.25rem;
+}
+
+.work h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.carousel {
+    max-width: 270px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+}
+
+.carousel .carousel-item img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item-hidden {
+    display: none;
+}
+
+
+.arrow {
+    display: inline;
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin: 2rem .5rem 0 .5rem;
+}
+
+.arrow:hover {
+    background: #755CDE;
+}
+
+.contact {
+    text-align: center;
+    background: #030303;
+    border-radius: 10px;
+    color: #FFF7F0;
+    padding: 3rem 1.5rem;
+    margin-top: 6.2rem;
+}
+
+.contact h3 {
+    font-size: 1.6rem;
+}
+
+.contact p {
+    padding-block: 1.5rem;
+}
+
+footer {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 2.4rem;
+    }
+
+    header,
+    footer,
+    .header,
+    .skills,
+    .profile,
+    .work,
+    .contact {
+        margin: 0 auto;
+        max-width: 690px;
+    }
+
+    .header h1 {
+        font-size: 2.7rem;
+        line-height: 3.4rem;
+        margin-top: 4rem;
+    }
+    
+    .header p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-top: 1.6rem;
+    }
+
+    .skills {
+        margin-top: 5rem;
+    }
+
+    .above-skills,
+    .below-skills {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .first-skill {
+        width: 333px;
+    }
+    
+    .second-skill {
+        width: 155px;
+    }
+    
+    .third-skill {
+        width: 155px;
+    }
+    
+    .four-skill {
+        width: 333px;
+    }
+    
+    .five-skill {
+        width: 333px;
+    }
+    
+    .six-skill {
+        width: 333px;
+    }
+
+    .profile {
+        display: flex;
+        gap: 2.3rem;
+        margin-top: 7.5rem;
+    }
+
+    .profile img {
+        width: 364px;
+        position: relative;
+        right: 100px;
+    }
+
+    .profile-info {
+        text-align: left;
+    }
+
+    .profile-info h2 {
+        font-size: 2rem;
+        line-height: 2.52rem;
+    }
+    
+    .profile-info p {
+        margin-block: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .work {
+        margin-top: 7.5rem;
+    }
+
+    .work h3 {
+        font-size: 2rem;
+    }
+
+    .carousel {
+        margin-top: 3.5rem;
+        max-width: 540px;
+    }
+
+    .arrow {
+        margin-top: 3.5rem;
+    }
+
+    .contact {
+        padding: 3.5rem 4.6rem;
+        margin-top: 7.5rem;
+    }
+
+    .contact h3 {
+        font-size: 2rem;
+    }
+    
+    .contact p {
+        font-size: 1.1rem;
+    }
+
+    .button-contact {
+        margin-top: 1.6rem;
+    }
+
+    footer {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header,
+    footer,
+    .header,
+    .skills,
+    .profile,
+    .work,
+    .contact {
+        margin-inline: 10rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header h1 {
+        font-size: 3.5rem;
+        line-height: 4.41rem;
+        margin-top: 4.125rem;
+    }
+    
+    .header p {
+        line-height: 1.75rem;
+        margin-top: 1.6875rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    .below-skills {
+        flex-direction: column;
+    }
+
+    .first-skill {
+        height: 388px;
+        margin-top: 0;
+    }
+
+    .second-skill,
+    .third-skill,
+    .four-skill,
+    .five-skill,
+    .six-skill {
+        height: 182px;
+        margin-top: 0;
+    }
+
+    .four-skill {
+        margin-top: 1.5rem;
+    }
+
+    .profile {
+        margin-top: 8.5rem;
+    }
+
+    .profile img {
+        width: 364px;
+        position: relative;
+        right: 0px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .work {
+        margin-top: 5.5rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.5rem 4rem;
+        max-width: 1000px;
+        margin-top: 5.5rem;
+    }
+
+    .contact-text {
+        text-align: left;
+        max-width: 540px;
+    }
+
+    .contact h3 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        margin-top: 3.5rem;
+    }
+}
