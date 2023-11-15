@@ -149,7 +149,7 @@ article img {
     height: 182px;
 }
 
-.below-skills {
+.inner-skills {
     display: flex;
     gap: 25px;
 }
